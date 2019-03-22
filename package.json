@@ -2,10 +2,6 @@
   "name": "vue-table-js",
   "version": "0.0.1-alpha",
   "description": "Vue table component",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "vue",
     "table",
@@ -13,6 +9,19 @@
     "dynamic",
     "multilevel"
   ],
+  "license": "MIT",
+  "bugs": "https://github.com/golubkovden/vue-table-js/issues",
+  "repository": "github:golubkovden/vue-table-js",
   "author": "Denis Golubkov",
-  "license": "MIT"
+  "files": [
+    "dist/*.js"
+  ],
+  "main": "dist/vue-table-js.common.js",
+  "module": "dist/vue-table-js.esm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "vue": "^2.0"
+  }
 }
