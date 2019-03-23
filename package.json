@@ -14,14 +14,15 @@
   "repository": "github:golubkovden/vue-table-js",
   "author": "Denis Golubkov",
   "files": [
-    "dist/*.js"
+    "dist/*.js",
+    "types/*.ts"
   ],
   "main": "dist/vue-table-js.common.js",
   "module": "dist/vue-table-js.esm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "vue": "^2.0"
   }
 }
