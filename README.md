@@ -1,13 +1,10 @@
-# vue-table-js
-Vue table component without css :ghost:
-
-## Installation
+# Installation
 
 ``` bash
 npm install vue-elastic-table --save
 ```
 
-## Hello world
+# Hello world
 
 ``` html
 <!DOCTYPE html>
@@ -41,17 +38,17 @@ npm install vue-elastic-table --save
 </html>
 ```
 
-## Component props
+# Component props
 
-### Columns 
+## Columns 
 * type: `String|Object` (see [Columns definition](#-columns-definition))
 * required
 
-### Data 
+## Data 
 * type: `Array<Object>`
 * default: `[]`
 
-### RowClass
+## RowClass
 * type: `String|Function`
 * default: `undefined`
 
@@ -67,13 +64,13 @@ function fn(item, index) {
 }
 ```
 
-### MultipleSorting
+## MultipleSorting
 * type: `Boolean`
 * default: `false`
 
-## # Columns definition
+# # Columns definition
 
-### key
+## key
 * type: `String`
 * default: `undefined`
 
@@ -89,7 +86,7 @@ in one table column.
 }
 ```
 
-### title 
+## title 
 * type: `String|Function|Object`
 * default: `undefined`
 
@@ -104,7 +101,7 @@ option as `function` is useful with i18n. Also you can use [vue components].
 </template>
 ```
 
-### component
+## component
 
 * type: `String|Object`
 * default: `undefined`
@@ -131,19 +128,19 @@ The vue component that will be used for display data in table data cell.
 </script>
 ```
 
-### sortable
+## sortable
 
 * type: `boolean|string`
 * default: `false`
 
 Define is column are sortable. 
 
-### props
+## props
 
 * type: `Object|Function`
 * default: `undefined`
 
-### children
+## children
 
 * type: `Array`
 * default: `undefined`
