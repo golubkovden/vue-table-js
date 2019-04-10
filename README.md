@@ -97,7 +97,7 @@ option as `function` is useful with i18n. Also you can use [vue components].
 
 ``` html 
 <template functional>
-    <th v-bind="data.attr s" v-on="listeners">Custom table header</th>
+    <th v-bind="data.attrs" v-on="listeners">Custom table header</th>
 </template>
 ```
 
