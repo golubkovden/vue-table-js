@@ -218,7 +218,7 @@ var script = {
             return this.rowClass;
         },
         display: function display(item, column) {
-            var value = get(item, column.key);
+            var value = get(item, column.path);
 
             if (has(column, 'transform')) {
                 if (typeof column.transform === 'function') {

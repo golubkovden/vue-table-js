@@ -101,7 +101,7 @@
                 return this.rowClass;
             },
             display(item, column) {
-                const value = get(item, column.key);
+                const value = get(item, column.path);
 
                 if (has(column, 'transform')) {
                     if (typeof column.transform === 'function') {

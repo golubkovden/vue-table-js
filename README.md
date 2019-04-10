@@ -108,7 +108,7 @@ option as `function` is useful with i18n. Also you can use [vue components].
 
 The vue component that will be used for display data in table data cell.
 
-```
+```vue
 <template>
     <td>
       <span class="foo bar">{{ data }}</span>
