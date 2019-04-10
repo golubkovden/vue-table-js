@@ -140,6 +140,10 @@ Using as `string` allows you override default behavior (full path of keys), see 
 
 Additional props passed into [component](#component)
 
+## transform
+* type `Function|Array<Function>`,
+* default: `undefined`
+
 ## children
 * type: `Array<Column>`
 * default: `undefined`
