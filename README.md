@@ -44,7 +44,7 @@ npm install vue-elastic-table --save
 ## Component props
 
 ### Columns 
-* type: `String|Object` (see [Columns definition](#Columns definition))
+* type: `String|Object` (see [Columns definition](#-columns-definition))
 * required
 
 ### Data 
@@ -71,7 +71,7 @@ function fn(item, index) {
 * type: `Boolean`
 * default: `false`
 
-## Columns definition
+## # Columns definition
 
 ### key
 * type: `String`
