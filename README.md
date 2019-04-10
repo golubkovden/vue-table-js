@@ -41,7 +41,7 @@ npm install vue-elastic-table --save
 # Component props
 
 ## Columns 
-* type: `String|Object` (see [Columns definition](#-columns-definition))
+* type: `String|Object` (see [Columns definition](#columns-definition))
 * required
 
 ## Data 
@@ -68,7 +68,7 @@ function fn(item, index) {
 * type: `Boolean`
 * default: `false`
 
-# # Columns definition
+# #Columns definition
 
 ## key
 * type: `String`
@@ -77,7 +77,7 @@ function fn(item, index) {
 Key of the data to be display. In multilevel headers you can leave the field `undefined` to combine different keys 
 in one table column.  
 ```javascript
-{
+const column = {
     title: 'Foo',
     children: [
         'id', 
@@ -101,8 +101,7 @@ option as `function` is useful with i18n. Also you can use [vue components].
 </template>
 ```
 
-## component
-
+## #component
 * type: `String|Object`
 * default: `undefined`
 
@@ -128,22 +127,24 @@ The vue component that will be used for display data in table data cell.
 </script>
 ```
 
-## sortable
-
+## #sortable
 * type: `boolean|string`
 * default: `false`
 
-Define is column are sortable. 
+Define is a column are sortable. 
+Using as `string` allows you override default behavior (full path of keys), see [events](#events)
 
 ## props
-
 * type: `Object|Function`
 * default: `undefined`
 
-## children
+Additional props passed into [component](#component)
 
-* type: `Array`
+## children
+* type: `Array<Column>`
 * default: `undefined`
+
+Sub columns
 
 ``` js
 {
@@ -155,6 +156,22 @@ Define is column are sortable.
     ],
 },
 ```
+
+# #Events
+
+## sorted
+Event fired when user clicked on [`sorted` column](#sortable). Example of incoming payload of event
+
+```
+[
+    {column: 'id', direction: 'asc'},
+    // if using multiple-sorting option 
+    {column: 'name', direction: 'desc'},
+    // if sortable option in column definition equals {..., sortable: 'my-custom-field', ...}
+    {column: 'my-custom-field', direction: 'asc'},
+]
+```
+
 
 [vue class bindings]: https://vuejs.org/v2/guide/class-and-style.html#Binding-HTML-Classes
 [vue components]: https://vuejs.org/v2/guide/components.html
