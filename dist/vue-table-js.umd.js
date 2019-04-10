@@ -145,7 +145,7 @@
     function normalizeColumn(column, prefix) {
         if ( prefix === void 0 ) prefix = '';
 
-        if (process.env.NODE_ENV !== 'production' && (typeof column !== 'string' || isPlainObject(column) === false)) {
+        if (process.env.NODE_ENV !== 'production' && typeof column !== 'string' && isPlainObject(column) === false) {
             throw new Error(("[vue-table-js] Column must be type of \"string\" or \"Object\". Actual " + column));
         }
 
