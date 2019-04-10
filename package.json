@@ -14,15 +14,21 @@
   "repository": "github:golubkovden/vue-table-js",
   "author": "Denis Golubkov",
   "files": [
-    "dist/*.js",
-    "types/*.ts"
+    "dist/*.js"
   ],
   "main": "dist/vue-table-js.common.js",
   "module": "dist/vue-table-js.esm.js",
+  "unpkg": "dist/vue-table-js.iife.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c build/rollup.config.js"
   },
   "devDependencies": {
-    "vue": "^2.0"
+    "rollup": "^1.8.0",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^9.3.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-vue": "^4.7.2",
+    "vue": "^2.0",
+    "vue-template-compiler": "^2.6.10"
   }
 }
