@@ -5,7 +5,9 @@ export function get(object, path, fallback = undefined) {
 
     let result = object;
 
-    const pieces = typeof path === 'string' ? path.split('.') : [];
+    const pieces = typeof path === 'string' && path.length > 0
+        ? path.split('.')
+        : [];
 
     for (let i = 0; i < pieces.length; i++) {
         if (has(result, pieces[i])) {

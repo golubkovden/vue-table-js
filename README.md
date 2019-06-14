@@ -134,6 +134,8 @@ The vue component that will be used for display data in table data cell.
 Define is a column are sortable. 
 Using as `string` allows you override default behavior (full path of keys), see [events](#events)
 
+Appends to table header cell classes `sortable`, `desc` or `asc` 
+
 ## props
 * type: `Object|Function`
 * default: `undefined`
