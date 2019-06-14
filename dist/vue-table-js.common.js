@@ -10,7 +10,9 @@ function get(object, path, fallback) {
 
     var result = object;
 
-    var pieces = typeof path === 'string' ? path.split('.') : [];
+    var pieces = typeof path === 'string' && path.length > 0
+        ? path.split('.')
+        : [];
 
     for (var i = 0; i < pieces.length; i++) {
         if (has(result, pieces[i])) {
