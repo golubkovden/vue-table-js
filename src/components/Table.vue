@@ -24,7 +24,9 @@
                     <component :is="leaf.component"
                                v-if="leaf.component"
                                :data="display(item, leaf)"
-                               v-bind="value(leaf.props)"/>
+                               v-bind="value(leaf.props)"
+                               v-on="leaf.listeners"
+                    />
                     <td v-else>{{ display(item, leaf) }}</td>
                 </template>
             </tr>

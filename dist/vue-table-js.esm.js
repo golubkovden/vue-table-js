@@ -423,14 +423,17 @@ var __vue_render__ = function() {
                       leaf.component
                         ? _c(
                             leaf.component,
-                            _vm._b(
-                              {
-                                tag: "component",
-                                attrs: { data: _vm.display(item, leaf) }
-                              },
-                              "component",
-                              _vm.value(leaf.props),
-                              false
+                            _vm._g(
+                              _vm._b(
+                                {
+                                  tag: "component",
+                                  attrs: { data: _vm.display(item, leaf) }
+                                },
+                                "component",
+                                _vm.value(leaf.props),
+                                false
+                              ),
+                              leaf.listeners
                             )
                           )
                         : _c("td", [_vm._v(_vm._s(_vm.display(item, leaf)))])

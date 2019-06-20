@@ -425,14 +425,17 @@ var __vue_render__ = function() {
                       leaf.component
                         ? _c(
                             leaf.component,
-                            _vm._b(
-                              {
-                                tag: "component",
-                                attrs: { data: _vm.display(item, leaf) }
-                              },
-                              "component",
-                              _vm.value(leaf.props),
-                              false
+                          _vm._g(
+                              _vm._b(
+                                  {
+                                      tag: 'component',
+                                      attrs: { data: _vm.display(item, leaf) },
+                                  },
+                                  'component',
+                                  _vm.value(leaf.props),
+                                  false,
+                              ),
+                              leaf.listeners,
                             )
                           )
                         : _c("td", [_vm._v(_vm._s(_vm.display(item, leaf)))])
@@ -469,11 +472,11 @@ __vue_render__._withStripped = true;
   /* functional template */
   var __vue_is_functional_template__ = false;
   /* style inject */
-  
-  /* style inject SSR */
-  
 
-  
+  /* style inject SSR */
+
+
+
   var Table = normalizeComponent_1(
     { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
     __vue_inject_styles__,
