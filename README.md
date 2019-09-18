@@ -1,7 +1,7 @@
 # Installation
 
 ``` bash
-npm install vue-elastic-table --save
+npm install vue-table-js --save
 ```
 
 # Hello world
